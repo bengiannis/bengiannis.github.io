@@ -920,6 +920,34 @@ a:hover {
   color: #9780ff;
 }
 
+.warning-bar {
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 3rem;
+  z-index: 6;
+  background-color: rgba(255, 209, 59, 0.9);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: black;
+  -webkit-transition: opacity 0.8s ease-in-out;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.margin-down-for-warning-bar {
+  margin-top: 3rem !important;
+}
+
 .navigation-bar {
   margin: 0;
   position: fixed;

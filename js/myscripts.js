@@ -71,6 +71,10 @@ $(document).ready(function() {
     $(".opening-hero-graphic").each(function(i, obj) {
         $(this).removeClass('opacity-zero');
     });
+
+    $(".warning-bar").each(function(i, obj) {
+        $(this).removeClass('opacity-zero');
+    });
 });
 
 $(window).scroll(function() {

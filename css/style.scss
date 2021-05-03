@@ -106,6 +106,26 @@ a:hover {
     color: #9780ff;
 }
 
+.warning-bar {
+    margin:0;
+    position:fixed;
+    width: 100%;
+    top: 0;
+    height: 3rem;
+    z-index: 6;
+    background-color: rgba(255, 209, 59, 0.9);
+    backdrop-filter: blur(15px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.margin-down-for-warning-bar {
+    margin-top: 3rem !important;
+}
+
 .navigation-bar {
     margin:0;
     position:fixed;
