@@ -1,5 +1,5 @@
 var disableDarkModeTransitionForAnchor = false;
-var disableAutoplay = true;
+var disableAutoplay = false;
 
 // Select all links with hashes
 $('a[href*="#"]')
