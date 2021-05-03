@@ -418,6 +418,23 @@ p {
     }
 }
 
+.dribbble-button-parent {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.dribbble-button {
+    border-color: #ea4c89;
+    color: #ea4c89 !important;
+    display: inline-block;
+    background-color: #fff0 !important;
+}
+
+.dribbble-button:hover {
+    border-color: #f082ac;
+    color: #f082ac !important;
+}
+
 a.anchor {
     display: block;
     position: relative;
@@ -520,8 +537,9 @@ a.anchor-no-offset {
 
 .secondary-button {
     background-color: #fff0;
-    border: 1.5px solid #dddddd;
-    color: #dddddd !important;
+    border-width: 1.5px;
+    border-style: solid;
+    color: #dddddd;
     font-weight: 400;
 }
 
