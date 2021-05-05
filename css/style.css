@@ -1330,8 +1330,8 @@ p {
 }
 
 .image-cell-lighter-shadow:hover img, .image-cell-lighter-shadow:hover video {
-  -webkit-box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.04) !important;
-          box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.04) !important;
+  -webkit-box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.06) !important;
+          box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.06) !important;
 }
 
 .image-cell-darker-shadow:hover img, .image-cell-darker-shadow:hover video {
@@ -1340,8 +1340,8 @@ p {
 }
 
 .image-cell-blue-shadow:hover img, .image-cell-blue-shadow:hover video {
-  -webkit-box-shadow: 0px 25px 40px rgba(8, 83, 145, 0.16) !important;
-          box-shadow: 0px 25px 40px rgba(8, 83, 145, 0.16) !important;
+  -webkit-box-shadow: 0px 25px 40px rgba(8, 83, 145, 0.12) !important;
+          box-shadow: 0px 25px 40px rgba(8, 83, 145, 0.12) !important;
 }
 
 .dribbble-button-parent {
