@@ -24,11 +24,13 @@
     <a class="anchor-no-offset" id="main"></a>
     <div class="dark-mode-nav">
         <div class="warning-bar opacity-zero">
-            <span>🚧 Site under construction</span>
+            <div class="safe-area-inset-sides">
+                <span>🚧 Site under construction</span>
+            </div>
         </div>
         <div class="navigation-bar">
             <div class="nav-container">
-                <div class="nav-section nav-left">
+                <div class="nav-section nav-left safe-area-inset-left">
                     <div class="nav-left-item-container">
                         <a href="#main" onclick="lightAnchorClicked()"><h2 class="nav-logo-name nav-left-item-hide">Ben Giannis</h2></a>
                     </div>
@@ -38,7 +40,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="nav-section nav-right">
+                <div class="nav-section nav-right safe-area-inset-right">
                     <ul>
                         <li class="hide-xxs"><a href="#portfolio" onclick="lightAnchorClicked()">Portfolio</a></li>
                         <li class="hide-xxs"><a href="#tweaks" onclick="darkAnchorClicked()">Tweaks</a></li>
@@ -53,7 +55,7 @@
     <div class="clip-x">
         <div class="content">
             <div class="container-fluid">
-                <div class="row">
+                <div class="row safe-area-inset-left">
                     <div class="col-xs-8 col-xxs-12">
                         <div class="opening">
                             <div class="inset-sides">
@@ -72,6 +74,8 @@
                             </video>
                         </div>
                     </div>
+                </div>
+                <div class="row safe-area-inset-sides">
                     <div class="col-xs-12 portfolio-header">
                         <div class="inset-sides">
                             <h3>Portfolio</h3>
@@ -152,7 +156,7 @@
         <div class="fjr-section-background"></div>
         <div class="content inset-sides">
             <div class="container-fluid">
-                <div class="row">
+                <div class="row safe-area-inset-sides">
                     <div class="col-xs-12 col-sm-6 hide-xs">
                         <img class="fjr-hero" src="images/FJR-hero.png">
                     </div>
@@ -168,7 +172,7 @@
     </div>
     <div class="tweak-header-section dark-mode">
         <div class="content inset-sides">
-            <div class="tweak-header-section-content-parent">
+            <div class="tweak-header-section-content-parent safe-area-inset-sides">
                 <div class="tweak-header-section-content">
                     <h3>Jailbreak Tweaks</h3>
                     <p>Jailbreak tweaks are lightweight pieces of software for iOS devices. Tweaks add customization in a way that apps can't: letting users add features like an always-on-display, custom gestures, or a redesigned home screen. Think of them like system-wide extensions.</p>
@@ -178,7 +182,7 @@
     </div>
     <div class="complications-section hero-section tweak-section dark-mode">
         <div class="content inset-sides">
-            <div class="container-fluid">
+            <div class="container-fluid safe-area-inset-sides">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6">
                         <a class="anchor-large" id="tweaks"></a>
@@ -195,7 +199,7 @@
     </div>
     <div class="velaris-section hero-section tweak-section dark-mode">
         <div class="content inset-sides">
-            <div class="container-fluid">
+            <div class="container-fluid safe-area-inset-sides">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6">
                         <img class="velaris-hero tweak-hero" src="images/Velaris-hero.png">
@@ -211,7 +215,7 @@
     </div>
     <div class="manta-section hero-section tweak-section dark-mode">
         <div class="content inset-sides">
-            <div class="container-fluid">
+            <div class="container-fluid safe-area-inset-sides">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6">
                         <h2>A modern dashboard for iOS</h2>
@@ -228,7 +232,7 @@
     <div class="contact-section dark-mode">
         <a class="anchor" id="contact"></a>
         <div class="content inset-sides">
-            <div class="container-fluid">
+            <div class="container-fluid safe-area-inset-sides">
                 <div class="row">
                     <div class="col-xs-12 form-show-after-submission form-element-hide">
                         <h2>Thanks for reaching out!</h2>
@@ -280,7 +284,7 @@
     </div>
     <footer class="footer dark-mode">
         <div class="content inset-sides">
-            <div class="container-fluid">
+            <div class="container-fluid safe-area-inset-sides">
                 <div class="row">
                     <div class="col-xs-12 col-sm-8 footer-left">
                         <h2>Created by Ben Giannis</h2>
@@ -305,7 +309,9 @@
                         </ul>
                     </div>
                     <div class="col-xs-12">
-                        <p>Copyright © <span id="year"></span> Ben Giannis</p>
+                        <div class="safe-area-inset-bottom">
+                            <p>Copyright © <span id="year"></span> Ben Giannis</p>
+                        </div>
                     </div>
                 </div>
             </div>

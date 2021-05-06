@@ -1731,6 +1731,30 @@ input:not(input:-webkit-autofill)::-webkit-contacts-auto-fill-button {
   background-color: #141414 !important;
 }
 
+.safe-area-inset-sides {
+  padding: 0 env(safe-area-inset-left) 0 env(safe-area-inset-right);
+}
+
+.safe-area-inset-left {
+  padding: 0 0 0 env(safe-area-inset-right);
+}
+
+.safe-area-inset-right {
+  padding: 0 env(safe-area-inset-left) 0 0;
+}
+
+.safe-area-inset-top {
+  padding: env(safe-area-inset-top) 0 0 0;
+}
+
+.safe-area-inset-bottom {
+  padding: 0 0 env(safe-area-inset-bottom) 0;
+}
+
+.safe-area-outset-margin-sides {
+  margin: 0 env(safe-area-inset-left) 0 env(safe-area-inset-right);
+}
+
 footer {
   padding: 1.5rem 0;
   background-color: #141414 !important;
@@ -1767,7 +1791,7 @@ footer h4 {
 }
 
 footer p {
-  font-size: 1rem;
+  font-size: 1rem !important;
   text-align: center;
   margin-top: 2rem;
 }
@@ -1843,6 +1867,9 @@ footer .footer-left li {
   .opening {
     margin: 5rem 0;
   }
+  .opening h1 {
+    font-size: 3.5rem;
+  }
   .opening-hero-graphic video {
     height: 95%;
     top: 1.5rem;
@@ -1869,12 +1896,12 @@ footer .footer-left li {
   .contact-section {
     padding: 2rem 0;
   }
+  input, textarea {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 600px) {
-  html {
-    font-size: 14px;
-  }
   .opening {
     margin-top: 3rem;
     text-align: center;
@@ -1915,12 +1942,15 @@ footer .footer-left li {
   .hide-xxs {
     display: none !important;
   }
+  .safe-area-inset-left {
+    padding: 0 env(safe-area-inset-left);
+  }
+  .safe-area-inset-right {
+    padding: 0 env(safe-area-inset-right);
+  }
 }
 
 @media (max-width: 400px) {
-  html {
-    font-size: 13px;
-  }
   .nav-container {
     padding: 0 1.5rem;
   }
