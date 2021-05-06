@@ -928,13 +928,14 @@ footer {
     .contact-section {
         padding: 2rem 0;
     }
+
+    input, textarea {
+        font-size: 1.2rem;
+    }
 }
 
 @media (max-width:600px) {
     //mobile
-    html {
-        font-size: 14px;
-    }
 
     .opening {
         margin-top: 3rem;
@@ -983,9 +984,6 @@ footer {
 
 @media (max-width:400px) {
     //really tiny device
-    html {
-        font-size: 13px;
-    }
 
     .nav-container {
         padding: 0 1.5rem;
