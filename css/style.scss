@@ -566,6 +566,7 @@ a.anchor-no-offset {
 
 .tweak-header-section {
     height: 120vh;
+    max-height: 70rem;
 
     .content {
         height: 100%;
@@ -949,6 +950,10 @@ footer {
         display: inline-block;
     }
 
+    .fjr-section {
+        margin-top: -7rem;
+    }
+
     .hide-xs {
         display: none !important;
     }
@@ -972,6 +977,10 @@ footer {
 
     h1 {
         font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
     }
 
     .col-xxs-12 {
