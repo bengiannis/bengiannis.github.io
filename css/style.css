@@ -1587,6 +1587,20 @@ a.anchor-no-offset {
           transform: rotate(4deg);
 }
 
+.tweak-video-feature-section {
+  margin-top: 17rem;
+  z-index: 2;
+}
+
+.tweak-video-feature-container {
+  text-align: center;
+}
+
+.tweak-video-feature-image {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
 .velaris-logo {
   color: #000000;
   font-weight: 600;
