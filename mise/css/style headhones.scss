@@ -1,0 +1,461 @@
+* { box-sizing: border-box; } 
+
+@import 'flexboxgrid';
+
+$blueish-white: #DBDFE3;
+$secondary-text-color: #7e8892;
+$dark-grey: #121518;
+$white: #ffffff;
+$mid-grey: #1e2124;
+$red: #e21e2f;
+$red-light: #ff4454;
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.3;
+    overflow-x: hidden;
+    background-color: $blueish-white;
+    transition: background-color 0.7s ease-in-out, color 0.7s ease-in-out;
+}
+
+.body-dark {
+    background-color: $dark-grey;
+    color: $white;
+
+    p {
+        color: $secondary-text-color;
+    }
+}
+
+.navigation {
+    padding: 1rem 0;
+    margin-bottom: 3rem;
+}
+
+.navigation-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation-logo {
+    width: 3rem;
+    height: auto;
+}
+
+.navigation-links {
+    a {
+        display: inline-block;
+        color: $secondary-text-color;
+        padding: 0 1rem;
+    }
+    a:hover {
+        color: $red;
+    }
+}
+
+.section {
+    padding: 2rem 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.light-section {
+    padding-top: 0;
+    padding-bottom: 7rem;
+}
+
+.dark-trigger {
+    margin-top: 10rem;
+    padding: 5rem 0;
+}
+
+.dark-section {
+    padding-bottom: 7rem;
+}
+
+.beats-solo3-logo {
+    margin-top:3rem;
+    margin-bottom:2rem;
+}
+
+p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    color: $secondary-text-color;
+}
+
+a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: $red;
+    text-transform: uppercase;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: $red-light;
+}
+
+.button {
+    padding: 0.5rem 1.2rem;
+    border-radius: 999px;
+}
+
+.primary-button {
+    background-color: $red;
+    color: $white;
+}
+
+.primary-button:hover {
+    background-color: $red-light;
+    color: $white;
+}
+
+.secondary-button {
+    margin: 0 -1.2rem;
+}
+
+.secondary-button:hover {
+    background-color: $mid-grey;
+}
+
+.large-button {
+    font-size: 1.2rem;
+    padding: 0.625rem 1.5rem;
+    font-weight: 600;
+}
+
+.large-paragraph {
+    font-size: 2rem;
+    color: $secondary-text-color;
+}
+
+@media (max-width:991px) {
+    .floating-left-rose-container {
+        margin-top: 6rem !important;
+    }
+    .color-picker-text {
+        margin-top: 0 !important;
+        text-align: center !important;
+    }
+    .floating-right-black {
+        display: none;
+    }
+}
+
+@media (max-width:767px) {
+    .beats-solo3-logo {
+        margin-top:0;
+    }
+    .hero-text {
+        text-align:center;
+        margin-bottom: 4rem;
+    }
+    .light-section {
+        padding-bottom: 2rem;
+    }
+    .floating-left-rose-container {
+        display: none;
+    }
+    .rose-text-section {
+        text-align: center;
+    }
+    .dark-trigger {
+        margin-top: 8rem !important;
+        padding: 2rem 0 !important;
+    }
+    .noise-cancellation {
+        margin-top: 1rem !important;
+    }
+    .bar-container {
+        padding: 0 0.3rem !important;
+    }
+    .color-picker {
+        margin-top: 0 !important;
+    }
+}
+
+.large-paragraph {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.floating-element {
+    opacity: 0;
+    transform: translateY(4rem);
+}
+
+.floating-element-delayed {
+    opacity: 0;
+    transform: translateY(4rem);
+}
+
+.floating-element-immediate {
+    opacity: 0;
+    transform: translateY(4rem);
+}
+
+.floating-element-mini {
+    opacity: 0;
+    transform: translateY(2rem);
+}
+
+.floating-element-after {
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-out;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.floating-element-after-delayed {
+    transition: opacity 1.5s ease-in-out 0.2s, transform 1.5s ease-out 0.2s, color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.floating-element-mini-after {
+    transition: opacity 0.7s ease-in-out, transform 0.7s ease-out, color 0.2s ease-in-out !important;
+}
+.floating-element-mini-delayed {
+    opacity: 0;
+    transform: translateY(2rem);
+}
+
+.floating-element-mini-delayed-after {
+    transition: opacity 0.7s ease-in-out 0.2s, transform 0.7s ease-out 0.2s, color 0.2s ease-in-out, background-color 0.2s ease-in-out !important;
+    opacity: 1;
+    transform: translateY(0);
+}
+.no-floating-transition {
+    transition: none !important;
+}
+
+.fade-element {
+    opacity: 0;
+}
+
+.fade-element-after {
+    transition: opacity 4s ease-out;
+    opacity: 1;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+.floating-left-rose {
+    margin-top: 2rem;
+}
+
+.rose-text-section {
+    margin-top: 10rem;
+}
+
+.studio-background-image {
+    background: linear-gradient(top, #00000000, $dark-grey);
+}
+
+.studio-heading {
+    text-align: center;
+    font-size: 6vw;
+    position: absolute;
+    font-weight: 600;
+    width: 100%;
+}
+
+.studio-heading-first {
+    top: 20vw;
+}
+
+.studio-heading-second {
+    top: 30vw;
+}
+
+.waves {
+    width: 100%;
+    height: 20rem;
+    position: relative;
+    margin-top: -5rem;
+
+    .wave {
+        position: absolute;
+        width: 100%;
+        fill: none;
+        stroke-width: 0.02rem;
+        stroke-linecap: round;
+    }
+
+    .wave1 {
+        stroke: rgb(0, 153, 255);
+        stroke: linear-gradient(0deg, red, red);
+        height: 100%;
+    }
+    .wave2 {
+        stroke: rgb(60, 73, 255);
+        height: 90%;
+        top: 1rem;
+        transform: scale(1, -1);
+    }
+    .wave3 {
+        stroke: rgb(87, 0, 228);
+        height: 70%;
+        top: 3.2rem;
+        transform: scale(1.13, -1);
+    }
+    .wave4 {
+        stroke: rgb(120, 0, 189);
+        height: 40%;
+        top: 6rem;
+        transform: scale(1.3, 1);
+    }
+    .wave5 {
+        stroke: rgb(0, 89, 255);
+        height: 50%;
+        top: 5rem;
+        transform: scale(1.1, 1);
+    }
+}
+
+.noise-cancellation {
+    margin-top: 8rem;
+    text-align: right;
+}
+
+.volume-bars {
+    transform: perspective(500px) rotatey(-50deg) rotatex(5deg);
+    margin-top: 2rem;
+}
+
+.bar-container {
+    padding: 0 0.5rem;
+}
+
+.bar {
+    background-color: $mid-grey;
+    height: 7rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    animation: volume 1s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.bar1 {
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+}
+
+.bar2 {
+    animation-duration: 0.35s;
+    animation-delay: 0.2s;
+}
+
+.bar3 {
+    animation-duration: 0.45s;
+    animation-delay: 0.4s;
+}
+
+.bar4 {
+    animation-duration: 0.4s;
+    animation-delay: 0.1s;
+}
+
+.bar5 {
+    animation-duration: 0.52s;
+    animation-delay: 0s;
+}
+
+.bar6 {
+    animation-duration: 0.42s;
+    animation-delay: 0.12s;
+}
+
+@keyframes volume {
+    0% {
+        height: 7rem;
+    }
+    100% {
+        height: 2rem;
+        margin-top: 5rem;
+    }
+}
+
+.color-picker {
+    margin-top: 10rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+}
+
+.color-picker:hover {
+    .headphone-color {
+        opacity: 0.2;
+        transition: all 0.35s cubic-bezier(0.15, 0, 0.5, 1), margin-right 1s ease-out, opacity 0.5s;
+    }
+}
+
+.headphone-color {
+    width: 16%;
+    cursor: pointer;
+    transition: all 0.35s cubic-bezier(0.15, 0, 0.5, 1), margin-right 1s ease-out;
+    opacity: 0;
+}
+
+.headphone-color-after {
+    margin-right: -5%;
+    opacity: 1;
+    transition: all 0.35s cubic-bezier(0.15, 0, 0.5, 1), margin-right 1s ease-out, opacity 1s;
+}
+
+.last-headphone {
+    margin-right: 0 !important;
+}
+
+.headphone-color:hover {
+    width: 25%;
+    margin-top: -1.5rem;
+    opacity: 1 !important;
+    z-index: 100;
+}
+
+.color-picker-text {
+    margin-top: 9rem;
+    text-align: right;
+}
+
+.footer-section {
+    background-color: $mid-grey;
+    color: $white;
+
+    h2 {
+        margin-bottom: 0;
+    }
+    .secondary-button:hover {
+        background-color: $dark-grey;
+    }
+}
+
+.post-footer-section {
+    text-align: center;
+    padding: 2rem;
+}
