@@ -161,7 +161,7 @@ function transitionElement(elementName, elementNameBefore, anchorName, scrollPos
             $(this).removeClass(elementNameBefore);
         }
         else {
-            $(this).addClass(elementNameBefore);
+            //$(this).addClass(elementNameBefore);
         }
     });
 }

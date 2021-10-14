@@ -915,7 +915,7 @@ ul {
 }
 
 .section.header .background-image {
-  background: url("../images/Transitions/0.jpg");
+  background: url("/images/Transitions/0.jpg");
   background-size: cover;
   background-position: center center;
   height: 100%;
@@ -931,14 +931,14 @@ ul {
 }
 
 .section.header .background-image-top {
-  background: url("../images/Transitions/0.jpg");
+  background: url("/images/Transitions/0.jpg");
   background-size: cover;
   background-position: center center;
   z-index: 2;
 }
 
 .section.header .background-image-bottom {
-  background: url("../images/Transitions/0.jpg");
+  background: url("/images/Transitions/0.jpg");
   background-size: cover;
   background-position: center center;
   z-index: 1;
@@ -1331,7 +1331,7 @@ ul {
 }
 
 .section.parallax-image {
-  background: url("../images/Rooms/ultrawide.jpg");
+  background: url("/images/Rooms/ultrawide.jpg");
   background-size: cover;
   background-position-x: center;
   background-position-y: 80%;

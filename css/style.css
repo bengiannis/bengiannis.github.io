@@ -1444,10 +1444,10 @@ a.anchor-no-offset {
   max-width: 18rem;
   -webkit-filter: drop-shadow(0 4rem 2rem rgba(0, 0, 0, 0.4));
           filter: drop-shadow(0 4rem 2rem rgba(0, 0, 0, 0.4));
-  -webkit-transition: opacity 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
-  transition: opacity 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
-  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
-  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+  -webkit-transition: opacity 1s ease-out, -webkit-transform 1s ease-out;
+  transition: opacity 1s ease-out, -webkit-transform 1s ease-out;
+  transition: transform 1s ease-out, opacity 1s ease-out;
+  transition: transform 1s ease-out, opacity 1s ease-out, -webkit-transform 1s ease-out;
 }
 
 .fjr-hero-before {
@@ -1500,7 +1500,7 @@ a.anchor-no-offset {
 }
 
 .tweak-header-section {
-  height: 120vh;
+  height: 80vh;
   max-height: 70rem;
 }
 
@@ -1590,6 +1590,7 @@ a.anchor-no-offset {
 .tweak-video-feature-section {
   margin-top: 17rem;
   z-index: 2;
+  display: none;
 }
 
 .tweak-video-feature-container {
@@ -1772,7 +1773,7 @@ input:not(input:-webkit-autofill)::-webkit-contacts-auto-fill-button {
 
 footer {
   padding: 1.5rem 0;
-  background-color: #141414 !important;
+  background-color: #101010 !important;
 }
 
 footer ul {
@@ -1907,6 +1908,44 @@ footer .footer-left li {
   }
   .fjr-section {
     margin-top: -7rem;
+  }
+  .hero-section .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .hero-section .tweak-video-feature-section {
+    display: none;
+  }
+  .hero-section .tweak-hero {
+    position: relative;
+    width: calc(10vw + 10rem);
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.6, black), color-stop(0.75, rgba(0, 0, 0, 0)));
+    -webkit-mask-image: linear-gradient(to bottom, black 0.6, rgba(0, 0, 0, 0) 0.75);
+            mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.6, black), color-stop(0.75, rgba(0, 0, 0, 0)));
+            mask-image: linear-gradient(to bottom, black 0.6, rgba(0, 0, 0, 0) 0.75);
+  }
+  .hero-section .tweak-hero-col {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .hero-section .tweak-txt-col {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .hero-section .complications-hero {
+    top: initial;
+    margin: initial;
+  }
+  .hero-section .velaris-hero {
+    top: initial;
+    margin: initial;
+  }
+  .hero-section .manta-hero {
+    top: initial;
+    margin: initial;
   }
   .hide-xs {
     display: none !important;
