@@ -942,10 +942,7 @@ a:hover {
   color: black;
   -webkit-transition: opacity 0.8s ease-in-out;
   transition: opacity 0.8s ease-in-out;
-}
-
-.margin-down-for-warning-bar {
-  margin-top: 3rem !important;
+  display: none;
 }
 
 .navigation-bar {
@@ -1886,6 +1883,9 @@ footer .footer-left li {
   .opening h1 {
     font-size: 3.5rem;
   }
+  h2 {
+    font-size: 2rem !important;
+  }
   .opening-hero-graphic video {
     height: 95%;
     top: 1.5rem;
@@ -1909,6 +1909,9 @@ footer .footer-left li {
   .fjr-section {
     margin-top: -7rem;
   }
+  .tweak-header-section {
+    display: none;
+  }
   .hero-section .row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1929,23 +1932,24 @@ footer .footer-left li {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
+    margin-bottom: -6rem;
+    text-align: center;
   }
   .hero-section .tweak-txt-col {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    text-align: center;
   }
-  .hero-section .complications-hero {
+  .hero-section p {
+    margin: 3rem 0;
+  }
+  .hero-section .tweak-hero {
     top: initial;
     margin: initial;
   }
-  .hero-section .velaris-hero {
-    top: initial;
-    margin: initial;
-  }
-  .hero-section .manta-hero {
-    top: initial;
-    margin: initial;
+  .tweak-section {
+    padding: 3rem 0 6rem 0;
   }
   .hide-xs {
     display: none !important;

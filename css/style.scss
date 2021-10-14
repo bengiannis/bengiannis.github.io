@@ -120,10 +120,11 @@ a:hover {
     justify-content: center;
     color: black;
     transition: opacity 0.8s ease-in-out;
+    display: none;
 }
 
 .margin-down-for-warning-bar {
-    margin-top: 3rem !important;
+    //margin-top: 3rem !important;
 }
 
 .navigation-bar {
@@ -938,6 +939,10 @@ footer {
         }
     }
 
+    h2 {
+        font-size: 2rem !important;
+    }
+
     .opening-hero-graphic {
         video {
             height: 95%;
@@ -969,6 +974,10 @@ footer {
         margin-top: -7rem;
     }
 
+    .tweak-header-section {
+        display: none;
+    }
+
     .hero-section {
         .row {
             display: flex;
@@ -984,26 +993,27 @@ footer {
     
         .tweak-hero-col {
             order: 0;
+            margin-bottom: -6rem;
+            text-align: center;
         }
     
         .tweak-txt-col {
             order: 1;
+            text-align: center;
         }
-        
-        .complications-hero {
+
+        p {
+            margin: 3rem 0;
+        }
+
+        .tweak-hero {
             top: initial;
             margin: initial;
         }
-        
-        .velaris-hero {
-            top: initial;
-            margin: initial;
-        }
-        
-        .manta-hero {
-            top: initial;
-            margin: initial;
-        }
+    }
+
+    .tweak-section {
+        padding: 3rem 0 6rem 0;
     }
 
     .hide-xs {
