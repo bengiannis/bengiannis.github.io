@@ -85,7 +85,7 @@ function updateForNewScrollPosition() {
     var scrollPos = $(window).scrollTop();
     //var windowHeight = $(window).height();
 
-    if (scrollPos >= 40) {
+    /*if (scrollPos >= 40) {
         $(".navigation-bar").each(function(i, obj) {
             $(this).addClass('navigation-bar-effects');
         });
@@ -111,10 +111,10 @@ function updateForNewScrollPosition() {
         $(".favicon").each(function(i, obj) {
             $(this).removeClass('nav-left-item-hide');
         });
-    }
+    }*/
 
     if (!disableDarkModeTransitionForAnchor) {
-        $(".dark-mode-trigger").each(function(i, obj) {
+        /*$(".dark-mode-trigger").each(function(i, obj) {
             var topDistance = $(this).offset().top;
             if ( (topDistance+400) < scrollPos ) {
                 
@@ -127,7 +127,7 @@ function updateForNewScrollPosition() {
                     $(this).removeClass('dark-mode');
                 });
             }
-        });
+        });*/
         $(".dark-mode-body-trigger").each(function(i, obj) {
             var topDistance = $(this).offset().top;
             if ( (topDistance+600) < scrollPos ) {

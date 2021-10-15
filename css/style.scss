@@ -129,7 +129,7 @@ a:hover {
 
 .navigation-bar {
     margin:0;
-    position:fixed;
+    //position:fixed;
     width: 100%;
     height:5rem;
     transition: background-color 0.5s ease-in-out, backdrop-filter 0.2s ease-in-out, box-shadow 0.4s ease-in-out, height 0.4s ease-in-out;
@@ -214,7 +214,7 @@ a:hover {
 .navigation-offset-spacer {
     margin:0;
     padding: 0;
-    height: 5rem;
+    //height: 5rem;
 }
 
 .call-to-action-button, button {
@@ -566,8 +566,9 @@ a.anchor-no-offset {
 }
 
 .tweak-header-section {
-    height: 80vh;
+    height: 60vh;
     max-height: 70rem;
+    padding-top: 20vh;
 
     .content {
         height: 100%;
@@ -939,10 +940,6 @@ footer {
         }
     }
 
-    h2 {
-        font-size: 2rem !important;
-    }
-
     .opening-hero-graphic {
         video {
             height: 95%;
@@ -1010,10 +1007,18 @@ footer {
             top: initial;
             margin: initial;
         }
+
+        h2 {
+            font-size: 2rem !important;
+        }
     }
 
     .tweak-section {
         padding: 3rem 0 6rem 0;
+    }
+
+    .complications-section {
+        padding: 8rem 0 6rem 0;
     }
 
     .hide-xs {
