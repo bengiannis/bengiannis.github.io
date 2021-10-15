@@ -39,7 +39,7 @@ body {
     background-color: $background-color-dark-mode;
     color: $primary-text-color-dark-mode;
 
-    .navigation-bar {
+    /*.navigation-bar {
         background-color: rgba(30, 30, 30, 0.85);
     }
     .nav-left {
@@ -58,7 +58,7 @@ body {
 
     .twitter-button {
         background-color: #15b2f0;
-    }
+    }*/
 
     p {
         color: $secondary-text-color-heavier-dark-mode;
@@ -78,9 +78,9 @@ body {
 
     @media (max-width:767px) {
         //tablet?
-        .navigation-bar {
+        /*.navigation-bar {
             background-color: rgba(30, 30, 30, 0.93) !important;
-        }
+        }*/
     }
 }
 

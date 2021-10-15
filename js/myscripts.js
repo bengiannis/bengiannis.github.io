@@ -170,9 +170,9 @@ function waveHand() {
 }
 
 function lightAnchorClicked() {
-    $(".dark-mode-nav").each(function(i, obj) {
+    /*$(".dark-mode-nav").each(function(i, obj) {
         $(this).removeClass('dark-mode');
-    }).deladelay( 5000 );
+    }).deladelay( 5000 );*/
 
     setTimeout(function() {
         //disableDarkModeTransitionForTweaksAnchor = false;
@@ -180,9 +180,9 @@ function lightAnchorClicked() {
 }
 
 function darkAnchorClicked() {
-    $(".dark-mode-nav").each(function(i, obj) {
+    /*$(".dark-mode-nav").each(function(i, obj) {
         $(this).addClass('dark-mode');
-    });
+    });*/
 
     setTimeout(function() {
     }, 500);
