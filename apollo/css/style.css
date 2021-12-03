@@ -1,7 +1,18 @@
+@font-face {
+  font-family: 'CircularWeb';
+  src: url("/apollo/fonts/CircularStd-Book.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'CircularWeb';
+  font-weight: bold;
+  src: url("/apollo/fonts/CircularStd-Bold.otf") format("opentype");
+}
+
 body {
   background-color: black !important;
   color: white;
-  font-family: Europa, sans-serif;
+  font-family: 'CircularWeb', Europa, sans-serif;
 }
 
 h1 {
