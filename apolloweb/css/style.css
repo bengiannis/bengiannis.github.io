@@ -1,4 +1,24 @@
-p {
-  background-color: red;
+@font-face {
+  font-family: 'CircularWeb';
+  src: url("/apollo/fonts/CircularStd-Book.otf") format("opentype");
 }
-/*# sourceMappingURL=style.css.map */
+
+@font-face {
+  font-family: 'CircularWeb';
+  font-weight: bold;
+  src: url("/apollo/fonts/CircularStd-Bold.otf") format("opentype");
+}
+
+body {
+  background-color: black !important;
+  color: white;
+  font-family: 'CircularWeb', Europa, sans-serif;
+}
+
+h1 {
+  line-height: 100%;
+}
+
+p {
+  color: #888;
+}
